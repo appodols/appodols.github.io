@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhPwxhaPFoYIyo3vytPODsDaN6TSM4Lbw">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ </script>
+    <meta charset="utf-8">
+    <!-- <h1> Let's Make Something Awesome</h1> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Saturday In The City</title>
+  </head>
+  <body>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD1cgUfN-1AOnivIQVTvsJaUcL7uuhCxis",
+        authDomain: "polsi1280lecture1.firebaseapp.com",
+        databaseURL: "https://polsi1280lecture1.firebaseio.com",
+        projectId: "polsi1280lecture1",
+        storageBucket: "polsi1280lecture1.appspot.com",
+        messagingSenderId: "483036654771"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <div class="page_1">
+          <div class="page">
+
+
+
+            <div class="leftPanel">
+
+                <span id="quantityTaxis">There are currently 0 Green Taxis out and about!</span>
+
+                <div class="select-start-time-container">
+                    <span class='start-time-label'>Select a start time:  </span>
+                    <input class="start-time-selector" type="time" value="05:24">
+                </div>
+
+
+                <div class="clockPanel">
+                  <div class="clockContent">
+                      <div id="clock"></div>
+                  </div>
+
+
+                  <div class="clockButtons">
+                    <button class ='start-clock' type="button" name="button">Start</button>
+                    <button class ='restart-clock' type="button" name="button">Restart</button>
+                    <button class ='pause-clock' type="button" name="button">Pause</button>
+                  </div>
+                </div>
+            </div>
+
+              <div class= 'mapContainer'>
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+
+
+      <script src="./build/bundle.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
+
+
+<!-- link to html in bundle -->
+
+
+<!-- <script type="text/javascript">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvHwuAgzpvxmykALJaexqpsUY8bslz10Y"
+</script> -->
